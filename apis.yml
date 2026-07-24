@@ -1,8 +1,26 @@
 aid: breathe-well-being
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/breathe-well-being.png
 name: Breathe Well-being
-description: 'Breathe Well-being is a company surfaced as a portfolio company of accel and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Breathe Well-being is an India-based digital therapeutics and chronic-care company focused
+  on Type 2 diabetes reversal and management. Through a mobile app (Android/iOS) it pairs continuous
+  health coaching, personalized nutrition and lifestyle plans, medical supervision, and progress tracking
+  to help members reduce blood sugar, lose weight, and lower medication dependence. Founded by Aditya
+  Kaicker and Rohan Verma, the company is backed by Accel and Y Combinator (Series A, 2021). It operates
+  as a direct-to-consumer health program rather than an API provider: as of this enrichment pass it
+  publishes no public developer portal, API documentation, OpenAPI specification, SDKs, or /.well-known
+  discovery surface (paths return the SPA lander fallback). This profile captures the company identity
+  and its probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/breathe-well-being/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Digital Therapeutics
+- Diabetes
+- Chronic Care
+- Wellness
+- Mobile App
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/breathe-well-being-domain-security.yml
 - type: Website
   url: https://www.breathewellbeing.in/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
